@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
@@ -68,12 +69,12 @@ export default function FormLogin() {
       </Link>
 
       <div className="space-y-8">
-        <button
+        <Button
           type="submit"
-          className="bg-blue-500 text-white w-full py-4 rounded-lg mt-20"
+          className="bg-blue-500 text-white w-full py-6 rounded-lg mt-16"
         >
           Entrar
-        </button>
+        </Button>
 
         <p className="text-center">
           Não tem uma conta?{" "}
